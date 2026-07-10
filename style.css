@@ -1,0 +1,256 @@
+/* Reset Styele */
+* {
+    margin: 0;
+    padding: 0;
+    /* copy from font link*/
+    font-family: "Open Sans", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    /*Image will always take 100% of available width*/
+}
+
+/*common style*/
+.common-btn {
+    background-color: #FD6E0A;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.outline-btn {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FD6E0A;
+    border: 1px solid #FD6E0A;
+    cursor: pointer;
+}
+
+.container {
+    /* instead of repeating-common class application */
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo-r {
+    color: #FD6E0A;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /*top-bottom & left-right*/
+    padding: 12px 0;
+    /* -->For custom width for every screen */
+    /* max-width: 1200px; */
+    /*-->Center e anbe*/
+    /* margin: auto; */
+}
+
+ul {
+    /* horizantal position  */
+    display: flex;
+    justify-content: space-between;
+    /* vertical position  */
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Hero section style  */
+.hero-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-parent-root {
+    background-color: rgb(253, 227, 210);
+}
+
+.hero-left-p-1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.hero-left h2 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.hero-left-btn-parent {
+    margin-top: 30px;
+}
+
+
+
+
+
+/* About US section style  */
+.about-parent {
+    background-color: rgb(253, 227, 210);
+    margin: 70px auto;
+    padding: 75px;
+    text-align: center;
+}
+
+.about-parent p {
+    margin: 10px 0;
+}
+
+.about-box-parent {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.about-box-parent .box {
+    background-color: antiquewhite;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+
+/* What I do section style  */
+.what-i-do-parent {
+    margin: 60px auto;
+    text-align: center;
+}
+
+.what-i-do-card-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.what-i-do-card-container .what-i-do-card {
+    border: 1px solid #FD6E0A;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.what-i-do-card-container .what-i-do-card h2 {
+    margin: 10px 0;
+}
+
+.what-i-do-card-container .what-i-do-card p {
+    color: grey;
+    font-size: large;
+}
+
+
+
+/* My amaging works section style */
+.my-amazing-parent {
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    margin-top: 20px;
+    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    /*Every row 250px*/
+    grid-template-areas:
+        "box1 box2 box3"
+        "box4 box2 box6"
+        "box4 box5 box6"
+
+}
+
+.gallery img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.box-1 {
+    grid-area: box1;
+}
+
+.box-2 {
+    grid-area: box2;
+}
+
+.box-3 {
+    grid-area: box3;
+}
+
+.box-4 {
+    grid-area: box4;
+}
+
+.box-5 {
+    grid-area: box5;
+}
+
+.box-6 {
+    grid-area: box6;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    margin-top: 70px !important;
+    /*margin already parent e ache tai !important diye apply dite hobe*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer form {
+    padding: 20px;
+}
+
+.footer-left {
+    padding: 15px;
+}
+
+footer form input,
+footer form textarea {
+    border: none;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.footer-icon-parent span {
+    color: #FD6E0A;
+    font-size: 25px;
+}
